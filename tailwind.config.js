@@ -4,17 +4,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Palette AVIZONE — verts "croissance", jamais l'émeraude par défaut de Tailwind.
-        forest: { DEFAULT: '#1F6F4C', dark: '#164F36', light: '#2E8F63', 50: '#EAF4EE' },
-        sprout: { DEFAULT: '#E9F4EC', dark: '#D3E9D9' },
-        sand: '#F6F7F5',
-        ash: '#5B655F',
-        ink: '#12201A',
-        amber: { DEFAULT: '#C98A2E', light: '#F5E6CC' },
-        rust: '#B4432F',
+        // Palette AVIZONE v2 — conforme section 8 du cahier des charges.
+        // Les noms de tokens restent stables (forest, sprout, sand, ash, ink,
+        // amber, rust) afin de ne pas casser les classes déjà posées dans les
+        // vues existantes ; seules les valeurs changent pour coller à la charte.
+        forest: { DEFAULT: '#1B6B3A', dark: '#124D29', light: '#4CAF50', 50: '#E8F3EA' },
+        sprout: { DEFAULT: '#EAF4EC', dark: '#D3E9D9' },
+        sand: '#FDF9F0',
+        pearl: '#F5F2EB',
+        ash: '#6B6459',
+        ink: '#2D2A24',
+        amber: { DEFAULT: '#F9A826', light: '#FDEBD0' },
+        gold: '#FFD54F',
+        rust: '#C0392B',
       },
       fontFamily: {
-        display: ['Manrope', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
       boxShadow: {
